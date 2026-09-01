@@ -1,0 +1,5 @@
+plugins { id 'com.android.application' }
+
+android { namespace 'com.tpgofighting.kebiao'; compileSdk 35
+    defaultConfig { applicationId 'com.tpgofighting.kebiao'; minSdk 23; targetSdk 34; versionCode 1; versionName '1.0' }
+}
