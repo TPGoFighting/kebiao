@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#F2ECE1"/>
+    </linearGradient>
+    <pattern id="gridPat2" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E0D8" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" rx="16" fill="url(#bgGrad2)" stroke="#1F242F" stroke-width="2.5"/>
+  <rect width="600" height="450" rx="16" fill="url(#gridPat2)" opacity="0.65"/>
+
+  <!-- Title Badge Top Left -->
+  <g transform="translate(30, 30)">
+    <rect width="160" height="28" rx="6" fill="#1F242F"/>
+    <text x="80" y="18" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" text-anchor="middle">CREATOR / 工作台</text>
+  </g>
+
+  <!-- Big Cozy Desk Surface (Isometric Perspective) -->
+  <polygon points="50,330 550,330 510,410 90,410" fill="#E8DEC8" stroke="#1F242F" stroke-width="2.5"/>
+  <!-- Desk Legs -->
+  <line x1="90" y1="410" x2="90" y2="440" stroke="#1F242F" stroke-width="3"/>
+  <line x1="510" y1="410" x2="510" y2="440" stroke="#1F242F" stroke-width="3"/>
+
+  <!-- Main Ultra-wide Monitor -->
+  <g transform="translate(200, 140)">
+    <!-- Stand -->
+    <rect x="90" y="150" width="20" height="45" fill="#DDD" stroke="#1F242F" stroke-width="2"/>
+    <polygon points="60,195 140,195 150,205 50,205" fill="#BBB" stroke="#1F242F" stroke-width="2"/>
+    <!-- Screen Bezel -->
+    <rect x="0" y="0" width="200" height="150" rx="8" fill="#1E293B" stroke="#1F242F" stroke-width="2.5"/>
+    <rect x="8" y="8" width="184" height="134" rx="4" fill="#0F172A"/>
+    <!-- Code Editor UI on Screen -->
+    <rect x="8" y="8" width="184" height="18" fill="#1E293B"/>
+    <circle cx="18" cy="17" r="3" fill="#EF4444"/>
+    <circle cx="27" cy="17" r="3" fill="#F59E0B"/>
+    <circle cx="36" cy="17" r="3" fill="#10B981"/>
+    <text x="50" y="20" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="8">TPSpace.vue</text>
+    <!-- Code Lines -->
+    <line x1="20" y1="40" x2="70" y2="40" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="75" y1="40" x2="140" y2="40" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="30" y1="52" x2="90" y2="52" stroke="#4ADE80" stroke-width="2"/>
+    <line x1="30" y1="64" x2="160" y2="64" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="30" y1="76" x2="110" y2="76" stroke="#C084FC" stroke-width="2"/>
+    <line x1="20" y1="90" x2="80" y2="90" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Floating Sparkle on Screen -->
+    <circle cx="160" cy="110" r="14" fill="#3B82F6" opacity="0.3"/>
+    <text x="160" y="115" fill="#38BDF8" font-size="14" font-weight="900" text-anchor="middle">⚡</text>
+  </g>
+
+  <!-- Vertical Secondary Monitor (Left) -->
+  <g transform="translate(80, 160)">
+    <rect x="0" y="0" width="95" height="155" rx="6" fill="#1E293B" stroke="#1F242F" stroke-width="2"/>
+    <rect x="6" y="6" width="83" height="143" rx="3" fill="#0F172A"/>
+    <!-- Terminal Logs -->
+    <text x="12" y="24" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="7">➜ tpspace git:(main)</text>
+    <text x="12" y="38" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="7">● Claude API 200 OK</text>
+    <text x="12" y="52" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="7">● Fast 21 services</text>
+    <text x="12" y="66" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="7">● Vibe Coding 100%</text>
+    <!-- Mini Graphic Chart -->
+    <polyline points="14,120 30,105 45,115 60,95 75,100" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Acoustic Guitar Leaning Against Desk (Right) -->
+  <g transform="translate(450, 170)">
+    <!-- Neck -->
+    <rect x="36" y="0" width="8" height="90" fill="#D97706" stroke="#1F242F" stroke-width="1.8"/>
+    <!-- Headstock -->
+    <polygon points="34,-20 46,-20 48,0 32,0" fill="#92400E" stroke="#1F242F" stroke-width="1.8"/>
+    <!-- Body -->
+    <path d="M 20 90 Q 0 110 15 140 Q 30 155 20 170 Q 0 195 40 210 Q 80 195 60 170 Q 50 155 65 140 Q 80 110 60 90 Z" fill="#F59E0B" stroke="#1F242F" stroke-width="2.2"/>
+    <!-- Sound Hole -->
+    <circle cx="40" cy="140" r="12" fill="#1F242F"/>
+    <circle cx="40" cy="140" r="14" fill="none" stroke="#FFF" stroke-width="1"/>
+    <!-- Bridge -->
+    <rect x="28" y="175" width="24" height="6" rx="2" fill="#1F242F"/>
+  </g>
+
+  <!-- Mechanical Keyboard on Desk -->
+  <g transform="translate(230, 350)">
+    <polygon points="0,0 140,0 150,25 10,25" fill="#FFF" stroke="#1F242F" stroke-width="2"/>
+    <!-- Key Caps Matrix -->
+    <line x1="15" y1="8" x2="135" y2="8" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="8,3"/>
+    <line x1="18" y1="16" x2="138" y2="16" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="8,3"/>
+  </g>
+
+  <!-- Steaming Coffee Cup -->
+  <g transform="translate(395, 345)">
+    <rect x="0" y="5" width="22" height="26" rx="3" fill="#FFF" stroke="#1F242F" stroke-width="1.8"/>
+    <!-- Cup Handle -->
+    <path d="M 22 10 Q 30 16 22 22" fill="none" stroke="#1F242F" stroke-width="1.8"/>
+    <!-- Steam -->
+    <path d="M 6 0 Q 3 -8 8 -14" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 14 -2 Q 18 -10 12 -16" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cute Cat Sleeping on Desk -->
+  <g transform="translate(130, 340)">
+    <!-- Cat Body -->
+    <ellipse cx="25" cy="18" rx="24" ry="16" fill="#FBBF24" stroke="#1F242F" stroke-width="2"/>
+    <!-- Cat Head -->
+    <circle cx="8" cy="12" r="11" fill="#FBBF24" stroke="#1F242F" stroke-width="2"/>
+    <!-- Ears -->
+    <polygon points="2,3 0,-4 7,3" fill="#F59E0B" stroke="#1F242F" stroke-width="1.5"/>
+    <polygon points="9,3 15,-4 14,3" fill="#F59E0B" stroke="#1F242F" stroke-width="1.5"/>
+    <!-- Sleeping Eyes -->
+    <path d="M 3 14 Q 5 18 7 14" fill="none" stroke="#1F242F" stroke-width="1.5"/>
+    <!-- Tail -->
+    <path d="M 48 20 Q 56 12 50 4" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <text x="24" y="-2" fill="#1F242F" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700">zzz</text>
+  </g>
+
+  <!-- Floating Code Symbols -->
+  <text x="180" y="100" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="900">{ }</text>
+  <text x="440" y="110" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900">&lt;/&gt;</text>
+  <text x="320" y="80" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900">✦</text>
+</svg>

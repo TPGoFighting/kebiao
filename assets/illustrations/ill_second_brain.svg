@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#F2ECE1"/>
+    </linearGradient>
+    <pattern id="gridPat7" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E0D8" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" rx="16" fill="url(#bgGrad7)" stroke="#1F242F" stroke-width="2.5"/>
+  <rect width="600" height="450" rx="16" fill="url(#gridPat7)" opacity="0.65"/>
+
+  <!-- Title Badge Top Left -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="28" rx="6" fill="#1F242F"/>
+    <text x="105" y="18" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" text-anchor="middle">SECOND BRAIN / 第二大脑</text>
+  </g>
+
+  <!-- Big Brain / Tree Trunk Architecture (Center) -->
+  <!-- Tree Trunk Roots in Base -->
+  <g stroke="#1F242F" stroke-width="2.5" fill="#E2E8F0">
+    <path d="M 270 380 Q 285 300 280 230 L 320 230 Q 315 300 330 380 Z"/>
+    <!-- Root Nodes -->
+    <circle cx="250" cy="390" r="10" fill="#FFF"/>
+    <circle cx="300" cy="395" r="12" fill="#F59E0B"/>
+    <circle cx="350" cy="390" r="10" fill="#FFF"/>
+  </g>
+
+  <!-- Brain Halves as Crystalline Branches -->
+  <!-- Left Hemisphere (Logic & Code) -->
+  <g transform="translate(300, 200)">
+    <path d="M 0 -110 C -80 -110 -150 -50 -150 20 C -150 80 -80 100 0 100 Z" fill="#DBEAFE" stroke="#1F242F" stroke-width="2.5"/>
+    <!-- Internal Synapses -->
+    <line x1="-30" y1="-70" x2="-90" y2="-40" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="-90" y1="-40" x2="-110" y2="20" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="-90" y1="-40" x2="-40" y2="10" stroke="#3B82F6" stroke-width="2"/>
+    <line x1="-40" y1="10" x2="-60" y2="60" stroke="#3B82F6" stroke-width="2"/>
+    <!-- Memory Nodes -->
+    <circle cx="-30" cy="-70" r="7" fill="#3B82F6" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="-90" cy="-40" r="8" fill="#FFF" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="-110" cy="20" r="6" fill="#F59E0B" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="-40" cy="10" r="9" fill="#10B981" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="-60" cy="60" r="6" fill="#FFF" stroke="#1F242F" stroke-width="1.5"/>
+    <text x="-70" y="-10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="900" fill="#1E293B">LOGIC</text>
+  </g>
+
+  <!-- Right Hemisphere (Creativity & Vibe) -->
+  <g transform="translate(300, 200)">
+    <path d="M 0 -110 C 80 -110 150 -50 150 20 C 150 80 80 100 0 100 Z" fill="#FEF3C7" stroke="#1F242F" stroke-width="2.5"/>
+    <!-- Internal Synapses -->
+    <line x1="30" y1="-70" x2="90" y2="-40" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="90" y1="-40" x2="110" y2="20" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="90" y1="-40" x2="40" y2="10" stroke="#F59E0B" stroke-width="2"/>
+    <line x1="40" y1="10" x2="60" y2="60" stroke="#F59E0B" stroke-width="2"/>
+    <!-- Memory Nodes -->
+    <circle cx="30" cy="-70" r="7" fill="#F59E0B" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="90" cy="-40" r="8" fill="#FFF" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="110" cy="20" r="6" fill="#EC4899" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="40" cy="10" r="9" fill="#8B5CF6" stroke="#1F242F" stroke-width="1.5"/>
+    <circle cx="60" cy="60" r="6" fill="#FFF" stroke="#1F242F" stroke-width="1.5"/>
+    <text x="50" y="-10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="900" fill="#1E293B">VIBE</text>
+  </g>
+
+  <!-- Central Energy Core -->
+  <circle cx="300" cy="200" r="22" fill="#FFF" stroke="#1F242F" stroke-width="2.5"/>
+  <text x="300" y="206" font-size="16" text-anchor="middle">⚡</text>
+
+  <!-- Floating Thought & Archive Blocks -->
+  <g transform="translate(60, 110)">
+    <rect width="90" height="45" rx="6" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="800" fill="#1F242F">📝 闪念笔记</text>
+    <text x="12" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">30+ 篇深度长文</text>
+  </g>
+
+  <g transform="translate(450, 110)">
+    <rect width="95" height="45" rx="6" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="800" fill="#1F242F">🎵 胶卷与灵感</text>
+    <text x="12" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">24 张黑胶海报</text>
+  </g>
+
+  <g transform="translate(60, 270)">
+    <rect width="100" height="45" rx="6" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="800" fill="#1F242F">🤖 向量记忆库</text>
+    <text x="12" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">端侧嵌入式检索</text>
+  </g>
+
+  <g transform="translate(440, 270)">
+    <rect width="105" height="45" rx="6" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="800" fill="#1F242F">🕸️ 时序图谱</text>
+    <text x="12" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">终身个人上下文</text>
+  </g>
+</svg>

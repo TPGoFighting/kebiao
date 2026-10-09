@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#F2ECE1"/>
+    </linearGradient>
+    <pattern id="gridPat10" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E0D8" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" rx="16" fill="url(#bgGrad10)" stroke="#1F242F" stroke-width="2.5"/>
+  <rect width="600" height="450" rx="16" fill="url(#gridPat10)" opacity="0.65"/>
+
+  <!-- Title Badge Top Left -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="28" rx="6" fill="#1F242F"/>
+    <text x="105" y="18" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" text-anchor="middle">OPEN SOURCE / 开源社区树</text>
+  </g>
+
+  <!-- Central Git Branching Tree -->
+  <!-- Main Trunk / Master Branch -->
+  <line x1="300" y1="400" x2="300" y2="150" stroke="#1F242F" stroke-width="5" stroke-linecap="round"/>
+  <!-- Commit Nodes on Main -->
+  <circle cx="300" cy="370" r="10" fill="#FFF" stroke="#1F242F" stroke-width="3"/>
+  <circle cx="300" cy="300" r="10" fill="#F59E0B" stroke="#1F242F" stroke-width="3"/>
+  <circle cx="300" cy="220" r="10" fill="#3B82F6" stroke="#1F242F" stroke-width="3"/>
+  <circle cx="300" cy="150" r="14" fill="#10B981" stroke="#1F242F" stroke-width="3"/>
+
+  <!-- Left Feature Branch: feat/agents -->
+  <path d="M 300 340 C 200 340 180 250 180 190" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="180" cy="260" r="8" fill="#FFF" stroke="#F59E0B" stroke-width="2.5"/>
+  <circle cx="180" cy="190" r="10" fill="#F59E0B" stroke="#1F242F" stroke-width="2.5"/>
+  <!-- Branch Return / Merge line -->
+  <path d="M 180 190 C 180 160 250 150 300 150" fill="none" stroke="#F59E0B" stroke-width="3" stroke-dasharray="4,4"/>
+
+  <!-- Right Feature Branch: feat/portal-ui -->
+  <path d="M 300 270 C 400 270 420 200 420 160" fill="none" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="420" cy="210" r="8" fill="#FFF" stroke="#8B5CF6" stroke-width="2.5"/>
+  <circle cx="420" cy="160" r="10" fill="#8B5CF6" stroke="#1F242F" stroke-width="2.5"/>
+  <!-- Branch Merge -->
+  <path d="M 420 160 C 420 130 350 120 300 120" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="4,4"/>
+  <circle cx="300" cy="120" r="12" fill="#EC4899" stroke="#1F242F" stroke-width="3"/>
+
+  <!-- Top Release Star Badge (v1.0.0 Tag) -->
+  <g transform="translate(300, 75)">
+    <polygon points="0,-18 5,-5 18,-5 8,4 12,18 0,9 -12,18 -8,4 -18,-5 -5,-5" fill="#F59E0B" stroke="#1F242F" stroke-width="2"/>
+    <rect x="-40" y="-35" width="80" height="18" rx="4" fill="#1F242F"/>
+    <text x="0" y="-23" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="900" text-anchor="middle">v1.0.0 Tag</text>
+  </g>
+
+  <!-- GitHub Pull Request Card (Left Side) -->
+  <g transform="translate(60, 110)">
+    <rect width="130" height="65" rx="8" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <circle cx="18" cy="20" r="8" fill="#DCFCE7"/>
+    <text x="18" y="24" font-size="10" text-anchor="middle">✓</text>
+    <text x="32" y="18" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="800" fill="#15803D">PR #42 Merged</text>
+    <text x="32" y="30" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">add: multi-route SPA</text>
+    <rect x="12" y="44" width="60" height="12" rx="3" fill="#F1F5F9"/>
+    <text x="42" y="53" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="700" fill="#334155" text-anchor="middle">+1,206 -15</text>
+  </g>
+
+  <!-- Star & Fork Metrics Card (Right Side) -->
+  <g transform="translate(430, 90)">
+    <rect width="120" height="60" rx="8" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <text x="14" y="22" fill="#1F242F" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="900">⭐ GitHub Stars</text>
+    <text x="14" y="38" fill="#D97706" font-family="'JetBrains Mono', monospace" font-size="8">● @TPGoFighting</text>
+    <text x="14" y="50" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="7">Open to collaborate</text>
+  </g>
+
+  <!-- Community Avatars around Base -->
+  <g transform="translate(180, 370)">
+    <circle cx="0" cy="0" r="16" fill="#DBEAFE" stroke="#1F242F" stroke-width="2"/>
+    <text x="0" y="4" font-size="14" text-anchor="middle">🧑‍💻</text>
+  </g>
+  <g transform="translate(420, 370)">
+    <circle cx="0" cy="0" r="16" fill="#FEF3C7" stroke="#1F242F" stroke-width="2"/>
+    <text x="0" y="4" font-size="14" text-anchor="middle">👩‍💻</text>
+  </g>
+</svg>

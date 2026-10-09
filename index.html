@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f4f2ed">
@@ -12,16 +16,320 @@
 .body-grid>.class-card{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:auto;height:auto;min-width:0}.day-picker{display:none}@media(max-width:800px){.day-picker{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:0 0 12px}.day-tab{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 0;font-weight:700}.day-tab.today{box-shadow:inset 0 -2px 0 var(--red)}.grid-shell{overflow:hidden}.schedule{min-width:0;grid-template-columns:56px 1fr}.schedule>.head{display:none}.body-grid{min-width:0;grid-template-columns:56px 1fr;grid-column:1 / -1;grid-template-rows:repeat(12,minmax(70px,1fr));height:840px}.body-grid .day-cell{display:none}.body-grid .day-cell.active{display:block;grid-column:2!important}.body-grid>.class-card{display:none;grid-column:2!important;margin:4px}.body-grid>.class-card.selected-day{display:flex}.masthead{grid-template-columns:1fr}.mast-meta{text-align:left;grid-template-columns:auto auto;justify-content:start}.toolbar{align-items:flex-start;gap:12px}.toolbar-left{width:100%;display:grid;grid-template-columns:34px auto 34px 1fr}.week-label{min-width:0}.range{width:100%}.toolbar-right{width:100%;display:grid;grid-template-columns:repeat(4,1fr)}.filter{padding:7px 4px;font-size:12px}.legend{gap:8px}.below{grid-template-columns:1fr;gap:28px}.practice-list{grid-template-columns:1fr}.footer{flex-direction:column}}.current-status{flex-basis:100%;border-left:3px solid var(--red);padding:8px 12px;background:rgba(230,59,46,.06);font-weight:700;color:var(--ink)}.current-status small{font-weight:400;color:var(--muted)}@media(max-width:800px){.day-picker{display:none}.grid-shell{overflow-x:auto;overflow-y:hidden}.schedule{min-width:820px;grid-template-columns:56px repeat(7,109px);grid-template-rows:54px auto}.schedule>.head{display:flex;padding:8px 5px;line-height:1.15;flex-direction:column;gap:3px}.schedule>.head small{font-size:10px;color:var(--muted)}.body-grid{min-width:820px;grid-template-columns:56px repeat(7,109px);grid-template-rows:repeat(12,minmax(76px,1fr));height:912px}.body-grid .day-cell{display:block}.body-grid>.class-card{display:flex!important;margin:4px;min-width:0;padding:8px 6px 7px;border-left-width:4px}.body-grid>.class-card.selected-day{display:flex}.class-card h3{font-size:13px;line-height:1.15}.card-top{display:block}.credit{display:block;margin-top:3px}.card-meta{font-size:10px;line-height:1.3}.card-foot{font-size:9px;display:block}.card-foot strong{display:block;font-size:10px;margin-top:2px}.body-grid .period-no{font-size:13px}.body-grid .period-no::after{left:3px;font-size:8px}.current-status{font-size:12px}.footer{margin-top:28px}}@media(max-width:800px){.site{padding:12px 8px 20px}.topline{height:3px;margin-bottom:10px}.kicker,.mast-meta,.legend,.footer,.current-status,.day-picker{display:none}h1{font-size:32px;margin:4px 0}.masthead{padding-bottom:8px}.toolbar{padding:10px 0 9px;gap:7px}.toolbar-left{width:100%;display:grid;grid-template-columns:28px 72px 28px 1fr;gap:4px}.week-label{font-size:14px;min-width:0;white-space:nowrap}.week-step{width:28px;height:28px}.range{width:100%}.toolbar-right{width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.filter{padding:5px 2px;font-size:11px}.grid-shell{overflow:hidden}.schedule{min-width:0!important;width:100%;grid-template-columns:34px repeat(5,minmax(0,1fr));grid-template-rows:42px auto}.schedule>.head{display:flex;padding:5px 1px;line-height:1.05;font-size:10px;flex-direction:column;gap:2px;overflow:hidden;text-align:center}.schedule>.head small{font-size:8px;color:var(--muted)}.body-grid{min-width:0!important;width:100%;grid-template-columns:34px repeat(5,minmax(0,1fr));grid-template-rows:repeat(12,minmax(55px,1fr));height:660px}.body-grid .day-cell{display:block}.body-grid>.class-card{display:flex!important;grid-column:unset!important;margin:2px;min-width:0;padding:4px 2px 3px;border-left-width:2px;overflow:hidden}.class-card h3{font-size:9px;line-height:1.08;letter-spacing:-.04em;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}.card-top{display:block}.credit{display:none}.card-meta{font-size:7px;line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.card-foot{font-size:7px;display:block;padding-top:2px}.card-foot strong{display:block;font-size:8px;margin-top:1px}.body-grid .period-no{font-size:10px}.body-grid .period-no::after{display:none}.below{display:none}.drawer-panel{width:94%;padding:20px}.detail-title{font-size:30px}}
 @media(max-width:800px){.site{padding:10px 8px 16px}.topline{height:3px;margin-bottom:8px}h1{font-size:30px;letter-spacing:-.08em;margin:0 0 5px}.masthead{border-bottom:1px solid var(--ink);padding-bottom:6px}.toolbar{padding:8px 0 7px;gap:6px}.toolbar-left{grid-template-columns:27px 78px 27px 1fr;gap:3px}.week-label{font-size:13px}.week-step{width:27px;height:27px}.toolbar-right{gap:4px}.filter{font-size:10px;padding:5px 1px}.grid-shell{border-top:3px solid var(--ink);border-bottom:1px solid var(--line)}.schedule{grid-template-columns:32px repeat(5,minmax(0,1fr));grid-template-rows:39px auto}.schedule>.head{padding:5px 1px;font-size:9px;font-weight:800;border-right:1px solid #d7d4cc}.schedule>.head:first-of-type{background:var(--ink);color:var(--paper)}.schedule>.head small{font-size:8px;color:var(--muted)}.body-grid{grid-template-columns:32px repeat(5,minmax(0,1fr));grid-template-rows:repeat(12,minmax(58px,1fr));height:696px}.body-grid .period-no,.body-grid .day-cell{border-right:1px solid #ddd9d0;border-bottom:1px dashed #d5d1c8}.body-grid .period-no{font-size:10px;background:rgba(255,255,255,.18)}.body-grid>.class-card{margin:2px;border:1px solid rgba(23,23,23,.14);border-left-width:3px;border-radius:7px;padding:5px 3px 4px;background:#fffefa;box-shadow:0 2px 0 rgba(23,23,23,.08);overflow:hidden}.body-grid>.class-card[data-tone="blue"]{background:#eaf0fa;border-color:#355c9a}.body-grid>.class-card[data-tone="red"]{background:#fff1ed;border-color:#e63b2e}.body-grid>.class-card[data-tone="yellow"]{background:#fff8df;border-color:#c98d21}.body-grid>.class-card[data-tone="green"]{background:#edf6ef;border-color:#4f765d}.class-card h3{font-size:10px;line-height:1.12;letter-spacing:-.035em;margin:0;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}.class-card .card-meta{font-size:0;line-height:0;margin:3px 0 0}.class-card .card-meta br{display:none}.class-card .card-meta::after{content:attr(data-room);font-size:8px;line-height:1;color:var(--muted)}.class-card .card-foot{border-top:1px solid rgba(23,23,23,.12);padding-top:3px;margin-top:3px;font-size:0}.class-card .card-foot span{display:none}.class-card .card-foot strong{display:block;font-size:8px;line-height:1;color:var(--ink)}.class-card .credit{display:none}.body-grid>.class-card:hover{transform:translateY(-2px);box-shadow:0 5px 10px rgba(23,23,23,.12)}.below{display:none}.drawer-panel{width:94%;padding:20px}.detail-title{font-size:30px}}
 .compact-title{display:none}@media(max-width:800px){.site{padding-left:4px;padding-right:4px}.schedule,.body-grid{grid-template-columns:30px repeat(5,minmax(0,1fr))}.body-grid>.class-card{padding-left:4px;padding-right:4px;background:#fffefa;border:1px solid rgba(23,23,23,.14);border-left-width:3px;border-radius:0;box-shadow:0 4px 0 rgba(23,23,23,.08)}.body-grid>.class-card[data-tone="blue"],.body-grid>.class-card[data-tone="green"],.body-grid>.class-card[data-tone="yellow"],.body-grid>.class-card[data-tone="red"]{background:#fffefa}.body-grid>.class-card[data-tone="blue"]{border-left-color:var(--blue)}.body-grid>.class-card[data-tone="green"]{border-left-color:var(--green)}.body-grid>.class-card[data-tone="yellow"]{border-left-color:var(--yellow)}.body-grid>.class-card[data-tone="red"]{border-left-color:var(--red)}.body-grid>.class-card .full-title{display:none}.body-grid>.class-card .compact-title{display:inline}.class-card h3{font-size:11px;line-height:1.14}.class-card .card-foot strong{font-size:8px}.class-card .card-meta::after{font-size:8px}}
+
+/* --- TP Space Neo-Brutalist Design System Overrides --- */
+:root {
+  --bg-canvas: #fbfaf6;
+  --paper: #fbfaf6 !important;
+  --ink: #181b22 !important;
+  --muted: #525866 !important;
+  --line: rgba(24, 27, 34, 0.12) !important;
+  --red: #f59e0b !important;
+  --blue: #eff6ff !important;
+  --yellow: #fef3c7 !important;
+  --green: #d9ef7f !important;
+  --white: #ffffff !important;
+  --accent-yellow: #f59e0b;
+  --accent-lime: #d9ef7f;
+  --accent-blue: #2563eb;
+  --border-main: #181b22;
+  --shadow-pop: 4px 4px 0px #181b22;
+}
+
+body {
+  background-color: #fbfaf6 !important;
+  background-image: linear-gradient(rgba(20,24,33,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(20,24,33,0.045) 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+  color: #181b22 !important;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+h1, h2, h3, .masthead h1, .detail-title {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Site Shell Card */
+.site {
+  max-width: 1240px !important;
+  margin: 24px auto !important;
+  background: #ffffff !important;
+  border: 1.5px solid #181b22 !important;
+  border-radius: 14px !important;
+  box-shadow: 4px 4px 0px #181b22 !important;
+  padding: 24px 28px 32px !important;
+}
+
+/* TP Top Brand Header Bar */
+.tp-brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1.5px solid #181b22;
+}
+.tp-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #181b22;
+  font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+}
+.tp-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f59e0b;
+  color: #181b22;
+  font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  border: 1.5px solid #181b22;
+  box-shadow: 2px 2px 0px #181b22;
+}
+.tp-header-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #525866;
+  background: #f3f0e6;
+  border: 1px solid rgba(24, 27, 34, 0.12);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+/* Masthead */
+.masthead {
+  border-bottom: 1.5px solid #181b22 !important;
+  padding-bottom: 16px !important;
+}
+.topline { display: none !important; }
+
+/* Toolbar controls */
+.toolbar {
+  background: #fbfaf6 !important;
+  border: 1.5px solid #181b22 !important;
+  border-radius: 10px !important;
+  box-shadow: 2px 2px 0px #181b22 !important;
+  padding: 12px 16px !important;
+  margin: 16px 0 !important;
+}
+.week-step {
+  background: #ffffff !important;
+  border: 1.5px solid #181b22 !important;
+  border-radius: 6px !important;
+  box-shadow: 1.5px 1.5px 0px #181b22 !important;
+  cursor: pointer;
+  font-weight: 700;
+}
+.week-step:hover {
+  background: #f59e0b !important;
+}
+.week-label {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 700 !important;
+  color: #181b22 !important;
+}
+.filter {
+  background: #ffffff !important;
+  border: 1.5px solid #181b22 !important;
+  border-radius: 6px !important;
+  box-shadow: 1.5px 1.5px 0px #181b22 !important;
+  color: #181b22 !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+.filter.active {
+  background: #f59e0b !important;
+}
+.current-status {
+  background: #fef3c7 !important;
+  border: 1.5px solid #181b22 !important;
+  border-left: 4px solid #f59e0b !important;
+  border-radius: 6px !important;
+  box-shadow: 1.5px 1.5px 0px #181b22 !important;
+}
+
+/* Schedule Grid */
+.grid-shell {
+  border: 1.5px solid #181b22 !important;
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 0px #181b22 !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+.schedule > .head {
+  background: #f3f0e6 !important;
+  border-right: 1px solid #181b22 !important;
+  border-bottom: 1.5px solid #181b22 !important;
+  color: #181b22 !important;
+  font-weight: 700 !important;
+}
+.body-grid .period-no {
+  background: #fbfaf6 !important;
+  border-right: 1.5px solid #181b22 !important;
+  border-bottom: 1px solid rgba(24, 27, 34, 0.12) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 600;
+}
+.body-grid .day-cell {
+  border-right: 1px solid rgba(24, 27, 34, 0.1) !important;
+  border-bottom: 1px solid rgba(24, 27, 34, 0.1) !important;
+}
+
+/* Class Cards */
+.body-grid > .class-card {
+  border: 1.5px solid #181b22 !important;
+  border-radius: 8px !important;
+  box-shadow: 2px 2px 0px #181b22 !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif !important;
+}
+.body-grid > .class-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 4px 4px 0px #181b22 !important;
+}
+.body-grid > .class-card[data-tone="blue"] {
+  background: #eff6ff !important;
+  border-color: #181b22 !important;
+  border-left: 4px solid #2563eb !important;
+}
+.body-grid > .class-card[data-tone="red"] {
+  background: #fff7ed !important;
+  border-color: #181b22 !important;
+  border-left: 4px solid #f59e0b !important;
+}
+.body-grid > .class-card[data-tone="yellow"] {
+  background: #fefce8 !important;
+  border-color: #181b22 !important;
+  border-left: 4px solid #eab308 !important;
+}
+.body-grid > .class-card[data-tone="green"] {
+  background: #f7fee7 !important;
+  border-color: #181b22 !important;
+  border-left: 4px solid #84cc16 !important;
+}
+
+/* Drawer */
+.drawer-panel {
+  border-left: 2px solid #181b22 !important;
+  background: #ffffff !important;
+}
+
+/* TP Space Standard Footer */
+.tpspace-footer {
+  border-top: 1.5px solid #181b22 !important;
+  background: #fbfaf6 !important;
+  padding: 24px 0 !important;
+  margin-top: 36px;
+  position: relative;
+  z-index: 10;
+  border-radius: 0 0 10px 10px;
+}
+.footer-inner {
+  max-width: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer-brand {
+  font-size: 0.95rem;
+  color: #181b22;
+  font-weight: 600;
+}
+.footer-copy {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.footer-stack-info {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sys-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+.footer-sub-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+.footer-sub-links a {
+  color: #181b22;
+  text-decoration: none;
+}
+.footer-sub-links a:hover {
+  color: #2563eb;
+}
+
 </style>
 </head>
 <body>
 <main class="site">
   <div class="topline"></div>
-  <header class="masthead"><div><div class="kicker">2026-2027 · Semester 01 / Nanjing University of Posts and Telecommunications</div><h1>唐潘课表</h1></div><div class="mast-meta"><span>学号</span><b>B24042527</b><span>校区</span><b>仙林</b><span>课程</span><b id="course-count">20</b></div></header>
+  
+  <div class="tp-brand-header">
+    <a href="https://tpgofighting.top/" class="tp-brand-link" title="返回 TP Space 门户">
+      <span class="tp-brand-badge">TP</span>
+      <span>TP Space · 南邮课程表</span>
+    </a>
+    <div class="tp-header-tag">NJUPT 2026-2027-1</div>
+  </div>
+<header class="masthead"><div><div class="kicker">2026-2027 · Semester 01 / Nanjing University of Posts and Telecommunications</div><h1>唐潘课表</h1></div><div class="mast-meta"><span>学号</span><b>B24042527</b><span>校区</span><b>仙林</b><span>课程</span><b id="course-count">20</b></div></header>
   <section class="toolbar" aria-label="课表控制"><div class="toolbar-left"><button class="week-step" id="prev" aria-label="上一周">−</button><span class="week-label" id="week-label">第 1 周</span><button class="week-step" id="next" aria-label="下一周">＋</button><input class="range" id="week" type="range" min="1" max="18" value="1" aria-label="选择周次"></div><div class="toolbar-right"><button class="filter active" data-filter="all">全部</button><button class="filter" data-filter="odd">单周</button><button class="filter" data-filter="even">双周</button><button class="filter" data-filter="current">有课</button></div><div class="current-status" id="current-status" aria-live="polite">正在读取当前课程...</div></section><nav class="day-picker" aria-label="移动端选择星期"><button class="day-tab active" data-day="1">一</button><button class="day-tab" data-day="2">二</button><button class="day-tab" data-day="3">三</button><button class="day-tab" data-day="4">四</button><button class="day-tab" data-day="5">五</button></nav>
   <section class="grid-shell"><div class="schedule"><div class="head">节次 <small>period</small></div><div class="head">星期一 <small>MON</small></div><div class="head">星期二 <small>TUE</small></div><div class="head">星期三 <small>WED</small></div><div class="head">星期四 <small>THU</small></div><div class="head">星期五 <small>FRI</small></div><div class="body-grid" id="body-grid"></div></div></section>
   <div class="legend"><span><i></i>必修 / 核心课</span><span><i class="blue"></i>限选</span><span><i class="green"></i>实践与指导</span><span><i class="yellow"></i>思想政治理论</span><span>点击课程卡片查看详情</span></div>
-  <footer class="footer"><span>课程安排来源：2026-2027 学年第 1 学期课表 PDF</span><span>当前视图：周视图 / 1-12 节</span></footer>
+  
+<footer class="tpspace-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand"><strong>TP SPACE<span class="brand-reg">®</span></strong> · 南邮课表服务 (TP Schedule)</div>
+      <p class="footer-copy">© 2026 Tyler Tang (唐潘) · kebiao.tpgofighting.top · 2026-2027-1 课表</p>
+    </div>
+    <div class="footer-right">
+      <div class="footer-stack-info">
+        <span class="sys-dot"></span>
+        <span>TP Space 统一设计规范 · Neo-Brutalism</span>
+      </div>
+      <div class="footer-sub-links">
+        <a href="https://tpgofighting.top/" target="_blank" rel="noopener">TP Space 门户 ↗</a>
+        <span class="dot-sep">·</span>
+        <a href="https://github.com/TPGoFighting" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot-sep">·</span>
+        <a href="https://njupt.tpgofighting.top" target="_blank" rel="noopener">新生指南</a>
+        <span class="dot-sep">·</span>
+        <a href="https://tpself.tpgofighting.top" target="_blank" rel="noopener">个人主页</a>
+        <span class="dot-sep">·</span>
+        <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" aria-label="回到顶部">返回顶部 ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </main>
 <aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-panel"><button class="close" id="close" aria-label="关闭详情">×</button><div class="detail-kicker">COURSE DETAIL</div><h2 class="detail-title" id="detail-title">课程详情</h2><div id="detail-body"></div></div></aside><div class="toast" id="toast">已切换到第 1 周</div>
 <script>
@@ -63,5 +371,6 @@ function openDetail(c){document.getElementById('detail-title').textContent=c.n;d
 function closeDetail(){const d=document.getElementById('drawer');d.classList.remove('open');d.setAttribute('aria-hidden','true')}
 document.getElementById('week').addEventListener('input',e=>setWeek(e.target.value));document.getElementById('prev').addEventListener('click',()=>setWeek(selectedWeek-1));document.getElementById('next').addEventListener('click',()=>setWeek(selectedWeek+1));document.getElementById('close').addEventListener('click',closeDetail);document.getElementById('drawer').addEventListener('click',e=>{if(e.target.id==='drawer')closeDetail()});document.querySelectorAll('.day-tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.day-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');selectedDay=Number(b.dataset.day);render()}));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail();if(e.key==='ArrowLeft')setWeek(selectedWeek-1);if(e.key==='ArrowRight')setWeek(selectedWeek+1)});document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');selectedFilter=b.dataset.filter;if(selectedFilter==='current'){selectedWeek=liveContext.week;selectedDay=liveContext.day;selectedFilter='all';document.querySelector('[data-filter="all"]').classList.add('active');b.classList.remove('active');document.querySelectorAll('.day-tab').forEach(x=>x.classList.toggle('active',Number(x.dataset.day)===selectedDay))}render();pulseToast()}));render();setInterval(updateCurrentStatus,30000);
 </script>
+  <script src="https://tpgofighting.top/assets/tp-canvas-bg.js" defer></script>
 </body>
 </html>

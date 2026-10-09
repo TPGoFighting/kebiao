@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="100%" stop-color="#F2ECE1"/>
+    </linearGradient>
+    <pattern id="gridPat6" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E5E0D8" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="450" rx="16" fill="url(#bgGrad6)" stroke="#1F242F" stroke-width="2.5"/>
+  <rect width="600" height="450" rx="16" fill="url(#gridPat6)" opacity="0.65"/>
+
+  <!-- Title Badge Top Left -->
+  <g transform="translate(30, 30)">
+    <rect width="210" height="28" rx="6" fill="#1F242F"/>
+    <text x="105" y="18" fill="#FFF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" text-anchor="middle">UNI-EMAIL / 高校知识图谱</text>
+  </g>
+
+  <!-- University Tower Architecture Silhouettes -->
+  <g fill="#E2E8F0" stroke="#1F242F" stroke-width="2">
+    <!-- Main Hall Building -->
+    <polygon points="180,240 240,160 300,240"/>
+    <rect x="190" y="240" width="100" height="120"/>
+    <!-- Windows -->
+    <rect x="205" y="255" width="16" height="24" rx="2" fill="#F8FAFC"/>
+    <rect x="235" y="255" width="16" height="24" rx="2" fill="#F59E0B"/>
+    <rect x="265" y="255" width="16" height="24" rx="2" fill="#F8FAFC"/>
+    <!-- Clock Tower Peak -->
+    <rect x="230" y="120" width="20" height="45" fill="#3B82F6"/>
+    <circle cx="240" cy="190" r="10" fill="#FFF"/>
+  </g>
+
+  <!-- Spider / Crawler Drone Carrying Knowledge Scrolls (Center) -->
+  <g transform="translate(360, 160)">
+    <!-- Drone Body -->
+    <rect x="-24" y="-18" width="48" height="36" rx="8" fill="#1E293B" stroke="#1F242F" stroke-width="2.2"/>
+    <!-- Glowing Eye Scanner -->
+    <circle cx="0" cy="0" r="8" fill="#38BDF8"/>
+    <!-- Propeller Rotors -->
+    <line x1="-34" y1="-26" x2="-14" y2="-26" stroke="#1F242F" stroke-width="3"/>
+    <line x1="14" y1="-26" x2="34" y2="-26" stroke="#1F242F" stroke-width="3"/>
+    <ellipse cx="-24" cy="-26" rx="14" ry="4" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <ellipse cx="24" cy="-26" rx="14" ry="4" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+    <!-- Beam down -->
+    <path d="M 0 18 L -60 140 L 60 140 Z" fill="#38BDF8" opacity="0.15"/>
+    <text x="0" y="32" font-size="16" text-anchor="middle">✉️</text>
+  </g>
+
+  <!-- Academic Cards Floating & Connected (Knowledge Graph) -->
+  <!-- Scholar Card 1: NJU -->
+  <g transform="translate(80, 120)">
+    <rect width="110" height="60" rx="8" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <circle cx="24" cy="24" r="12" fill="#DBEAFE"/>
+    <text x="24" y="28" font-size="12" text-anchor="middle">👨‍🏫</text>
+    <text x="44" y="22" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#1F242F">Prof. Zhang</text>
+    <text x="44" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">南京大学 · AI</text>
+    <rect x="12" y="44" width="86" height="10" rx="2" fill="#FEF3C7"/>
+    <text x="55" y="52" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="700" fill="#D97706" text-anchor="middle">zhang@nju.edu.cn</text>
+  </g>
+
+  <!-- Scholar Card 2: NJUPT -->
+  <g transform="translate(430, 240)">
+    <rect width="120" height="60" rx="8" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <circle cx="24" cy="24" r="12" fill="#DCFCE7"/>
+    <text x="24" y="28" font-size="12" text-anchor="middle">👩‍🏫</text>
+    <text x="44" y="22" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#1F242F">Prof. Wang</text>
+    <text x="44" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">南京邮电大学 · 软工</text>
+    <rect x="12" y="44" width="96" height="10" rx="2" fill="#DCFCE7"/>
+    <text x="60" y="52" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="700" fill="#15803D" text-anchor="middle">wang@njupt.edu.cn</text>
+  </g>
+
+  <!-- Scholar Card 3: NJUCM -->
+  <g transform="translate(80, 310)">
+    <rect width="110" height="60" rx="8" fill="#FFF" stroke="#1F242F" stroke-width="2" filter="drop-shadow(2px 2px 0px #1F242F)"/>
+    <circle cx="24" cy="24" r="12" fill="#FEE2E2"/>
+    <text x="24" y="28" font-size="12" text-anchor="middle">👨‍⚕️</text>
+    <text x="44" y="22" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="800" fill="#1F242F">Prof. Chen</text>
+    <text x="44" y="34" font-family="'JetBrains Mono', monospace" font-size="7" fill="#64748B">南中医 · 药学</text>
+    <rect x="12" y="44" width="86" height="10" rx="2" fill="#FEE2E2"/>
+    <text x="55" y="52" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="700" fill="#B91C1C" text-anchor="middle">chen@njucm.edu.cn</text>
+  </g>
+
+  <!-- Connecting Graph Lines -->
+  <g stroke="#1F242F" stroke-width="1.8" stroke-dasharray="4,4" fill="none">
+    <path d="M 190 150 Q 280 140 360 160"/>
+    <path d="M 360 180 Q 380 230 430 250"/>
+    <path d="M 190 330 Q 280 340 360 200"/>
+  </g>
+
+  <!-- Metric Banner (Bottom Right) -->
+  <g transform="translate(390, 360)">
+    <rect width="170" height="46" rx="8" fill="#1F242F"/>
+    <text x="85" y="20" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" text-anchor="middle">✓ 77% 邮箱覆盖率</text>
+    <text x="85" y="36" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">FastAPI + Playwright</text>
+  </g>
+</svg>

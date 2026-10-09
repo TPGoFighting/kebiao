@@ -34,3 +34,16 @@ screen_*.png
 test_*.png
 phone_screenshot*.png
 .deploy.conf
+build/
+*.bak
+*.bak.*
+*.bak-*
+*.old
+._*
+logs/
+*.sqlite*
+*.sql
+*.zip
+*.tar*
+*.gz
+nginx_*.conf
